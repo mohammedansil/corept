@@ -38,7 +38,7 @@ height: 753px;
 export const FirstImage = styled.img`
 width: 500px;
 height:333px;
-border-radius:15px;
+border-radius:28px;
 position: absolute;
 object-fit:cover;
 right:30px;
@@ -46,7 +46,7 @@ top:0;
 @media(max-width: 768px){
     position: relative;
     display:flex;
-    border-radius:15px;
+    border-radius:28px;
     justify-content:center;
     align-items:center;
     width: 90%;
