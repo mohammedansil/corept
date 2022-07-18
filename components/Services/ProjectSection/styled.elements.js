@@ -101,7 +101,7 @@ font-size:16px;
 opacity:0.8;
 line-height:160%;
 text-transform:capitalize;
-width:90%;
+width:100%;
 margin-bottom:8px;
 letter-spacing:0.8px ;
 /* text-align:center; */
@@ -114,7 +114,7 @@ font-size:16px;
 opacity:0.8;
 line-height:160%;
 text-transform:capitalize;
-width:90%;
+width:100%;
 @media screen and (max-width:299px){
   font-size:14px;
 }
