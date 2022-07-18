@@ -32,8 +32,12 @@ export const Image = styled.img`
 `
 export const Faqs = styled.div`
  user-select: none;
- width:90vw;
+ width:90%;
+ @media(max-width: 768px){
+    width:90vw;
  height:auto;
+}
+
 `
 
 export const QuestionWrapper = styled.div`
