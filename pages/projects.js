@@ -51,7 +51,7 @@ export default function Projects() {
           property="og:description"
           content="Corept construction is a Specialist agency in Post Tensioning, offer efficient structural solution to Building and infrastructure works. We involve in exploring appropriate Engineering systems and construction, Post Tensioning design &amp; Execution services to assist the clients in enhancing their projects build ability and cost-effectiveness."
         />
-        <meta property="og:image" content="/corept-banner.jpg" />
+        <meta property="og:image" itemProp="image" content="/corept-banner.jpeg" />
 
         {/* Twitter  */}
         <meta property="twitter:card" content="summary_large_image" />
@@ -61,7 +61,7 @@ export default function Projects() {
           property="twitter:description"
           content="Corept construction is a Specialist agency in Post Tensioning, offer efficient structural solution to Building and infrastructure works. We involve in exploring appropriate Engineering systems and construction, Post Tensioning design &amp; Execution services to assist the clients in enhancing their projects build ability and cost-effectiveness."
         />
-        <meta property="twitter:image" content="/corept-banner.jpg"></meta>
+        <meta property="twitter:image" content="/corept-banner.jpeg"></meta>
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
