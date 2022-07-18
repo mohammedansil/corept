@@ -57,10 +57,69 @@ export const ProjectsWrapper = styled.div`
 
 export const ProjectCard = styled.div`
   width: 100%;
-  height: auto;
+  height: 100%;
   position:relative;
-	
+  display:flex;
+  flex-direction:column;
+	border-radius:15px;
+  padding:1rem;
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.25 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 `;
+
+export const ProjectTextWrapper = styled.div`
+width:100%;
+height:auto;
+padding:6px 0;
+border-top:1px solid rgba( 0, 0, 0, 0.22);
+margin-top:8px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+`;
+
+export const ProjectTitle = styled.h3`
+font-size:20px;
+line-height:150%;
+font-weight:600;
+margin-bottom:10px;
+border-bottom:1px solid black;
+/* border-radius:20px; */
+padding:10px;
+
+@media screen and (max-width:299px){
+  font-size:18px;
+}
+`
+
+export const ProjectDesc = styled.p`
+font-size:16px;
+opacity:0.8;
+line-height:160%;
+text-transform:capitalize;
+width:90%;
+margin-bottom:8px;
+letter-spacing:0.8px ;
+/* text-align:center; */
+@media screen and (max-width:299px){
+  font-size:14px;
+}
+`
+export const ProjectDescTwo = styled.p`
+font-size:16px;
+opacity:0.8;
+line-height:160%;
+text-transform:capitalize;
+width:90%;
+@media screen and (max-width:299px){
+  font-size:14px;
+}
+/* text-align:center; */
+`
 
 export const ProjectImage = styled(Image)`
   /* min-width:500px; */
