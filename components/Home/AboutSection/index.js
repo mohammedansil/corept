@@ -28,9 +28,9 @@ function index() {
         <RightContainer>
           <Title>Committed 	&amp; Motivated</Title>
           <Description>
-          CORE PT Construction was established by a team of Bahrain with experienced professionals in the year of 2021 with the aim to provide value added engineering solutions to our clients using Post Tensioning technology.
-          
-          We as a Specialist agency in Post Tensioning, offer efficient structural solution to Building and infrastructure works. We involve in exploring appropriate Engineering systems and construction, Post Tensioning design 	&amp; Execution services to assist the clients in enhancing their projects build ability and cost-effectiveness.
+          CORE PT, post tensioning company was established by a team of Singapore and Indian experienced professionals in the year of 2021 with the aim to provide value added engineering solutions to our clients using post tensioning system.
+We as a specialist agency in post tensioning, offer efficient structural Engineering consultation solution to building and infrastructure works.
+
           </Description>
           <Link href="/contact-us" passhref>
          <a><Button>Contact</Button></a>

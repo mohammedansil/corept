@@ -9,7 +9,7 @@ export const Section = styled.div`
 export const Container = styled.div`
   height: 100%;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1900px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@ export const ProjectSection = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 2rem 1rem;
+  padding: 2rem 0rem;
 `;
 export const TextWrapper = styled.div`
   display: flex;
@@ -172,3 +172,52 @@ export const Line = styled.div`
     background-color: #222;
   }
 `;
+export const ProjectInnerTextWrapper = styled.div`
+display: grid;
+grid-template-columns: auto auto;
+`
+export const ProjectFloor = styled.p`
+font-size:16px;
+opacity:0.8;
+line-height:160%;
+text-transform:capitalize;
+width:100%;
+@media screen and (max-width:299px){
+  font-size:14px;
+}
+/* text-align:center; */
+`
+export const ProjectSystem = styled.p`
+font-size:16px;
+opacity:0.8;
+line-height:160%;
+text-transform:capitalize;
+width:90%;
+margin-bottom:15px;
+@media screen and (max-width:299px){
+  font-size:14px;
+}
+/* text-align:center; */
+`
+export const ProjectConsultant = styled.p`
+font-size:16px;
+opacity:0.8;
+line-height:160%;
+text-transform:capitalize;
+width:100%;
+@media screen and (max-width:299px){
+  font-size:14px;
+}
+/* text-align:center; */
+`
+export const ProjectStatus = styled.p`
+font-size:16px;
+opacity:0.8;
+line-height:160%;
+text-transform:capitalize;
+width:100%;
+@media screen and (max-width:299px){
+  font-size:14px;
+}
+/* text-align:center; */
+`

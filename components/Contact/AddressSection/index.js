@@ -29,11 +29,11 @@ function index() {
           <ContactDetails>
             <Contact>
               <Icon></Icon>
-              <Description>Call us +973 3230 2049</Description>
+              <Description>Call us: +973 32302049 / +973 37132632</Description>
             </Contact>
             <Contact>
               <Icon></Icon>
-              <Description>info@corept.me</Description>
+              <Description>Email: info@corept.me</Description>
             </Contact>
             <Contact>
               <Icon></Icon>
@@ -42,9 +42,9 @@ function index() {
             <Contact>
               <Icon></Icon>
               <Description>
-              villa -130, road -2803, block-328
-                  <br />
-                  Manama Kingdom of Bahrain
+              Building 612, Road -2519, Block -925, <br/>Riffa
+Kingdom Of Bahrain
+
               </Description>
             </Contact>
           </ContactDetails>

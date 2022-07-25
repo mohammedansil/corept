@@ -5,21 +5,21 @@ function index() {
     <Section>
       <Container>
         <Counter>
-          <Number>14</Number>
-          <Title>Years of Experience</Title>
+          <Number>15+</Number>
+          <Title>years of Experience engineers</Title>
         </Counter>
         <Counter>
-          <Number>237</Number>
-          <Title>Project Taken</Title>
+          <Number>200+</Number>
+          <Title>Projects Ongoing </Title>
         </Counter>
-        <Counter>
+        {/* <Counter>
           <Number>11K</Number>
           <Title>Twitter Follower</Title>
         </Counter>
         <Counter>
           <Number>12</Number>
           <Title>Awards won</Title>
-        </Counter>
+        </Counter> */}
       </Container>
     </Section>
   );

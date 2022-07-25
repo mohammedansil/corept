@@ -14,6 +14,11 @@ import {
   ProjectDesc,
   ProjectTextWrapper,
   ProjectDescTwo,
+  ProjectInnerTextWrapper,
+  ProjectFloor,
+  ProjectSystem,
+  ProjectConsultant,
+  ProjectStatus,
 } from "./styled.elements";
 
 function index() {
@@ -30,15 +35,20 @@ function index() {
             {Projects.map((project) => (
               <ProjectCard key={project.id}>
                 <ProjectImage
-                  src={project.src}
+                  src={project.Src}
                   alt={project.alt}
                   width={450}
                   height={450}
                 />
                 <ProjectTextWrapper>
-                  <ProjectTitle>{project.name}</ProjectTitle>
-                  <ProjectDesc><strong>Details :</strong>&nbsp;{project.description}</ProjectDesc>
-                  <ProjectDescTwo><strong>Consultant :</strong>&nbsp;{project.consultant}</ProjectDescTwo>
+                  <ProjectTitle>{project.Name}</ProjectTitle>
+                  <ProjectInnerTextWrapper>
+                    <ProjectSystem><strong>System :<br/></strong>&nbsp;{project.System}</ProjectSystem>
+                    <ProjectConsultant><strong>Consultant :<br/></strong>&nbsp;{project.Consultant}</ProjectConsultant>
+                    <ProjectFloor><strong>Floors :<br/></strong>&nbsp;{project.Floors}</ProjectFloor>
+                    <ProjectStatus><strong>Status :<br/></strong>&nbsp;{project.Status}</ProjectStatus>
+                  </ProjectInnerTextWrapper>
+                  
                 </ProjectTextWrapper>
               </ProjectCard>
             ))}

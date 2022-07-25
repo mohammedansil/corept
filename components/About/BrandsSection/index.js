@@ -5,20 +5,18 @@ function index() {
     <Section>
       <Container>
         <Counter>
-          <Image src="/images/br1.jpeg" alt="image" />
+          <Image src="/images/br1.jpg" alt="image" />
         </Counter>
         <Counter>
-        <Image src="/images/br2.jpeg" alt="image" />
+        <Image src="/images/br2.jpg" alt="image" />
         </Counter>
         <Counter>
-        <Image src="/images/br3.jpeg" alt="image" />
+        <Image src="/images/br3.png" alt="image" />
         </Counter>
         <Counter>
-        <Image src="/images/br4.jpeg" alt="image" />
+        <Image src="/images/br4.png" alt="image" />
         </Counter>
-        <Counter>
-        <Image src="/images/br5.jpeg" alt="image" />
-        </Counter>
+        
       </Container>
     </Section>
   );
