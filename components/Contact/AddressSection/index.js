@@ -42,9 +42,7 @@ function index() {
             <Contact>
               <Icon></Icon>
               <Description>
-              Building 612, Road -2519, Block -925, <br/>Riffa
-Kingdom Of Bahrain
-
+              Riffa Manama <br />Kingdom of Bahrain
               </Description>
             </Contact>
           </ContactDetails>

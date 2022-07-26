@@ -161,6 +161,7 @@ export const NextArrow = styled(GrNext)`
   color: #fff;
   fill: #fff;
   font-size: 20px;
+
   & path {
     stroke: #fff;
    }

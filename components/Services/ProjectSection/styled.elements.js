@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styled from "styled-components";
 
 export const Section = styled.div`
@@ -121,9 +120,12 @@ width:100%;
 /* text-align:center; */
 `
 
-export const ProjectImage = styled(Image)`
+export const ProjectImage = styled.img`
   /* min-width:500px; */
   width: 100%;
+  max-width:450px;
+  max-height:450px;
+  min-height:250px;
   object-fit: cover;
   object-position:center;
   height: 100%;
