@@ -2,21 +2,20 @@ import styled from 'styled-components'
 
 export const Section = styled.div`
 display: flex;
-flex-direction:row;
+flex-direction:column;
 justify-content: center;
-background-image: url("/images/bg.jpg");
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-filter: grayscale(15%);
+height: 100%;
 user-select:none;
 `
 export const Container = styled.div`
 padding:50px 200px;
 display: flex;
 flex-direction:row;
-width: 1200px;
+width: 100%;
+height: 100%;
+position: relative;
 justify-content: center;
+padding: 150px 0;
 @media(max-width: 768px){
     flex-direction: column;
     padding:50px 0;
@@ -27,6 +26,7 @@ export const Counter = styled.div`
 background-color:#fff;
 margin:0 15px;
 border-radius:5px;
+z-index: 99;
 @media(max-width:767px){
     margin-bottom:50px;
 }
@@ -34,6 +34,12 @@ border-radius:5px;
 
 export const Title = styled.h1`
 
+`
+export const Overlay = styled.img`
+position: absolute;
+top:0px;
+z-index: 1;
+filter:blur(5px);
 `
 export const Image = styled.img`
 width: 180px;

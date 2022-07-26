@@ -20,8 +20,9 @@ import {
   Experience,
   FormText,
 } from "./styled.elements";
+import {send} from "emailjs-com";
 import {useState,useEffect} from 'react';
-function index() {
+function CareerPage() {
   const [name,setName] = useState("")
   const[email,setEmail] = useState("")
   const[number,setNumber] = useState("")
@@ -43,10 +44,10 @@ function index() {
   const sendMail = (e) => {
     e.preventDefault();
     send(
-      "Service",
-      "Template",
+      "service_62jcp0i",
+      "template_o1gm40f",
       {name,email,message,number,dob,qualification,experience,senderTime,senderDate},
-      "public"
+      "ANpZOVY0YaFXiIKJj"
     )
       .then((response) => {
         console.log("message sent succesfully", response.status, response.text);
@@ -80,24 +81,38 @@ function index() {
           <Title>TEAM WORK:</Title>
           <Description>We believe in bringing out the best in our employees by identifying their true potential and helping them develop optimally to meet our organization objectives. We do this by encouraging self and collective capabilities towards enhanced team performance.</Description>
         </Career>
-        <Form>
+        <Form onSubmit={submit}>
           <FormText>Career Form</FormText>
           <FormDescription>TO BE THE MOST VALUED SPECIALISED PROJECT PARTNER OF OUR CLIENTS!</FormDescription>
           <FormDescription>For aspiring young graduates or experience applicants seeking for new challenges, please feel free to submit the form below with your details:</FormDescription>
           <FirstInput>
-              <Name type="text" placeholder="Your name"/>
-              <Email type="email" placeholder="Your email"/>
+              <Name type="text" placeholder="Your name" value={name}onChange={(e)=>{
+                setName(e.target.value);
+              }}/>
+              <Email type="email" placeholder="Your email" value={email}onChange={(e)=>{
+                setEmail(e.target.value);
+              }}/>
             </FirstInput>
           <FirstInput>
-              <DOB type="text" placeholder="Your Date of Birth"/>
-              <Phone type="number" placeholder="Your Phone"/>
+              <DOB type="date" placeholder="Your Date of Birth" value={dob}onChange={(e)=>{
+                setDob(e.target.value);
+              }}/>
+              <Phone type="number" placeholder="Your Phone" value={number}onChange={(e)=>{
+                setNumber(e.target.value);
+              }}/>
             </FirstInput>
           <FirstInput>
-              <Qualification type="text" placeholder="Your Qualification"/>
-              <Experience type="number" placeholder="Your Experience"/>
+              <Qualification type="text" value={qualification} placeholder="Your Qualification"onChange={(e)=>{
+                setQualification(e.target.value);
+              }}/>
+              <Experience type="number" value={experience} placeholder="Your Experience"onChange={(e)=>{
+                setExperience(e.target.value);
+              }}/>
             </FirstInput>
-            <Message type="text" placeholder="Your Message"/>
-            <Button>Send Message</Button>
+            <Message type="text" value={message} placeholder="Your Message"onChange={(e)=>{
+                setMessage(e.target.value);
+              }}/>
+            <Button type="submit">Send Message</Button>
         </Form>
         {/* <Head>Write a Message</Head>
         <Title>Have Any Questions?</Title>
@@ -115,4 +130,4 @@ function index() {
   );
 }
 
-export default index;
+export default CareerPage;

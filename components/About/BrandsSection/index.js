@@ -1,9 +1,10 @@
-import { Section, Container, Title, Counter, Image } from "./styled.elements";
+import { Section, Container, Title, Counter, Image,Overlay } from "./styled.elements";
 
 function index() {
   return (
     <Section>
       <Container>
+        <Overlay src="/images/corept overlay.jpg"/>
         <Counter>
           <Image src="/images/br1.jpg" alt="image" />
         </Counter>
@@ -11,10 +12,10 @@ function index() {
         <Image src="/images/br2.jpg" alt="image" />
         </Counter>
         <Counter>
-        <Image src="/images/br3.png" alt="image" />
+        <Image src="/images/br4.png" alt="image" />
         </Counter>
         <Counter>
-        <Image src="/images/br4.png" alt="image" />
+        <Image src="/images/br5.jpg" alt="image" />
         </Counter>
         
       </Container>
