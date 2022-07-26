@@ -81,7 +81,7 @@ const Footer = () => {
               <IconContainer>
                 <IconContainerLocation />
                 <IconContainerText>
-                Riffa Manama <br />Kingdom of Bahrain
+                Building 612, Road -2519, Block -925<br /> Riffa Manama Kingdom of Bahrain
                 </IconContainerText>
               </IconContainer>
             </FooterWorkingDiv>
