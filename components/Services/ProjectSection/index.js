@@ -32,8 +32,7 @@ function index() {
                 <ProjectImage
                   src={project.src}
                   alt={project.alt}
-                  width={450}
-                  height={450}
+
                 />
                 <ProjectTextWrapper>
                   <ProjectTitle>{project.name}</ProjectTitle>

@@ -1,73 +1,85 @@
+import React, { useState, useEffect, useRef } from "react";
 import {
   Container,
-  Head,
   Title,
   Description,
   Buttons,
   Button,
-  SectionOne,
-  SectionTwo,
-  SectionThree,
+  Section,
   ButtonTwo,
+  ImageDiv,
+  SliderIconContainer,
+  PrevArrow,
+  NextArrow,
+  IconCircle,
 } from "./styled.elements";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-import Link from 'next/link';
+import Link from "next/link";
+import slides from "../../../data/homeData";
 
+function Home() {
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
+  const timeout = useRef(null);
 
-function index() {
+  useEffect(() => {
+    const nextSlide = () => {
+      setCurrent(current === length - 1 ? 0 : current + 1);
+    };
+
+    timeout.current = setTimeout(nextSlide, 3000);
+    return function () {
+      if (timeout.current) {
+        clearTimeout(timeout.current);
+      }
+    };
+  }, [current, length]);
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
   return (
    
-    <SectionOne>
-      <Container>
-
-        {/* <Head>We are the best</Head> */}
-        <Title>Your Expectations are Our Milestones</Title>
-        <Description>We as a Specialist agency in Post Tensioning, offer efficient structural solution&apos;s.</Description>
-        <Buttons>
-        <Link href="/projects" passHref>
-          <a><Button>Our Work</Button></a>
-          </Link>
-          <Link href="/contact-us" passHref>
-          <a><ButtonTwo>Contact</ButtonTwo></a>
-          </Link>
-        </Buttons>
-      </Container>
-    </SectionOne>
-    // <SectionTwo>
-    //   <Container>
-
-    //     {/* <Head>We are the best</Head> */}
-    //     <Title>Sustainable Engineering Solution</Title>
-    //     <Description>Customer Satisfaction is always our top priority in the operations.</Description>
-    //     <Buttons>
-    //     <Link href="/projects" passHref>
-    //       <a><Button>Our Work</Button></a>
-    //       </Link>
-    //       <Link href="/contact-us" passHref>
-    //       <a><ButtonTwo>Contact</ButtonTwo></a>
-    //       </Link>
-    //     </Buttons>
-    //   </Container>
-    // </SectionTwo>
-    // <SectionThree>
-    //   <Container>
-
-    //     {/* <Head>We are the best</Head> */}
-    //     <Title>Uncover the true Potential of your structure</Title>
-    //     <Description>Strive towards greater cost competitiveness and work towards continued Financial Performance</Description>
-    //     <Buttons>
-    //     <Link href="/projects" passHref>
-    //       <a><Button>Our Work</Button></a>
-    //       </Link>
-    //       <Link href="/contact-us" passHref>
-    //       <a><ButtonTwo>Contact</ButtonTwo></a>
-    //       </Link>
-    //     </Buttons>
-    //   </Container>
-    // </SectionThree>
-   
+    <Section>
+      {slides.map((slide, index) => (
+        <Container key={index}>
+          {index === current && (
+            <ImageDiv style={{ backgroundImage: `url(${slide.image})` }}>
+              <Title>{slide.title}</Title>
+              <Description>{slide.paragraph}</Description>
+              <Buttons>
+                <Link href="/projects" passHref>
+                  <a>
+                    <Button>Our Work</Button>
+                  </a>
+                </Link>
+                <Link href="/contact-us" passHref>
+                  <a>
+                    <ButtonTwo>Contact</ButtonTwo>
+                  </a>
+                </Link>
+              </Buttons>
+       
+              <SliderIconContainer>
+                <IconCircle>
+                  {" "}
+                  <PrevArrow onClick={prevSlide} />
+                </IconCircle>
+                <IconCircle>
+                  {" "}
+                  <NextArrow onClick={nextSlide} />{" "}
+                </IconCircle>
+              </SliderIconContainer>
+           
+            </ImageDiv>
+          )}
+        </Container>
+      ))}
+    </Section>
+ 
   );
 }
 
-export default index;
+export default Home;

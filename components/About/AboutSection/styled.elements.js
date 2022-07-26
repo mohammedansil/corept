@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import Image from 'next/image'
 
 export const Section = styled.div`
 background-image: url("https://expert-themes.com/newwp/emarat/wp-content/uploads/2020/10/1.jpg");

@@ -42,9 +42,7 @@ function index() {
             <Contact>
               <Icon></Icon>
               <Description>
-              villa -130, road -2803, block-328
-                  <br />
-                  Manama Kingdom of Bahrain
+              Riffa Manama <br />Kingdom of Bahrain
               </Description>
             </Contact>
           </ContactDetails>
