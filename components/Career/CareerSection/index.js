@@ -88,30 +88,30 @@ function CareerPage() {
           <FirstInput>
               <Name type="text" placeholder="Your name" value={name}onChange={(e)=>{
                 setName(e.target.value);
-              }}/>
+              }}required/>
               <Email type="email" placeholder="Your email" value={email}onChange={(e)=>{
                 setEmail(e.target.value);
-              }}/>
+              }}required/>
             </FirstInput>
           <FirstInput>
               <DOB type="date" placeholder="Your Date of Birth" value={dob}onChange={(e)=>{
                 setDob(e.target.value);
-              }}/>
+              }}required/>
               <Phone type="number" placeholder="Your Phone" value={number}onChange={(e)=>{
                 setNumber(e.target.value);
-              }}/>
+              }}required/>
             </FirstInput>
           <FirstInput>
               <Qualification type="text" value={qualification} placeholder="Your Qualification"onChange={(e)=>{
                 setQualification(e.target.value);
-              }}/>
+              }}required/>
               <Experience type="number" value={experience} placeholder="Your Experience"onChange={(e)=>{
                 setExperience(e.target.value);
-              }}/>
+              }}required/>
             </FirstInput>
             <Message type="text" value={message} placeholder="Your Message"onChange={(e)=>{
                 setMessage(e.target.value);
-              }}/>
+              }}required/>
             <Button type="submit">Send Message</Button>
         </Form>
         {/* <Head>Write a Message</Head>

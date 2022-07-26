@@ -63,14 +63,14 @@ function ContactForm() {
           <FirstInput>
             <Name type="text" placeholder="Your name" value={name}onChange={(e)=>{
                   setName(e.target.value);
-                }}/>
+                }} required/>
                 <Email type="email" placeholder="Your email" value={email}onChange={(e)=>{
                   setEmail(e.target.value);
-                }}/>
+                }}required/>
           </FirstInput>
           <Message type="text" value={message} placeholder="Your Message"onChange={(e)=>{
                 setMessage(e.target.value);
-              }}/>
+              }}required/>
           <Button type="submit">Send Message</Button>
         </Form>
       </Container>
