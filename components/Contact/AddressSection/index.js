@@ -29,11 +29,11 @@ function index() {
           <ContactDetails>
             <Contact>
               <Icon></Icon>
-              <Description>Call us +973 3230 2049</Description>
+              <Description>Call us: +973 32302049 / +973 37132632</Description>
             </Contact>
             <Contact>
               <Icon></Icon>
-              <Description>info@corept.me</Description>
+              <Description>Email: info@corept.me</Description>
             </Contact>
             <Contact>
               <Icon></Icon>

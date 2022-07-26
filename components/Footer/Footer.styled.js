@@ -172,6 +172,6 @@ export const FooterCopyRightText = styled.p`
   text-align: center;
 `;
 
-export const FooterCopyRightTextSpan = styled.span`
+export const FooterCopyRightTextSpan = styled.a`
   color: #ffb200;
 `;

@@ -24,6 +24,9 @@ justify-content: center;
 }
 `
 export const Counter = styled.div`
+background-color:#fff;
+margin:0 15px;
+border-radius:5px;
 @media(max-width:767px){
     margin-bottom:50px;
 }

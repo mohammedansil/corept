@@ -48,11 +48,11 @@ function index() {
                 01<Span>/03</Span>
               </IndexNo>
               <Title>VILLA AT RIFFA</Title>
-              <Description>
+              {/* <Description>
                 In the year 2021 CPC Acquired Specialised Engineering a leading
                 Post Tensioning Company in the Kingdom of Bahrain as a part of
                 the diversification strategy.
-              </Description>
+              </Description> */}
               <Link href="/projects" passHref>
                 <a>
                   <Button>
@@ -75,12 +75,12 @@ function index() {
                 02<Span>/03</Span>
               </IndexNo>
               <Title> VILLA AT DIYAR AL MUHARRAQ</Title>
-              <Description>
+              {/* <Description>
                 Our goal is to strengthen our position as a trusted post
                 tensioning service provider in Kingdom of Bahrain through the
                 development of our technical expertise&amp; satisfy the
                 customer.
-              </Description>
+              </Description> */}
               <Link href="/projects" passHref>
                 <a>
                   <Button>
@@ -103,11 +103,11 @@ function index() {
                 03<Span>/03</Span>
               </IndexNo>
               <Title> VILLA AT MURQOBAN</Title>
-              <Description>
+              {/* <Description>
                 &quot;Customer Satisfaction&quot; is always our top priority in
                 the operations. HSE, Quality and Reliability are the
                 comer-stones of CPC&apos;s business venture.
-              </Description>
+              </Description> */}
               <Link href="/projects" passHref>
                 <a>
                   <Button>

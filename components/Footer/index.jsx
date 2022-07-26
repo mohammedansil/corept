@@ -71,7 +71,7 @@ const Footer = () => {
               </IconContainer>
               <IconContainer>
                 <IconContainerPhone />
-                <IconContainerText>+973 3230 2049</IconContainerText>
+                <IconContainerText>+973 32302049<br/>+973 37132632</IconContainerText>
               </IconContainer>
           
               <IconContainer>
@@ -90,7 +90,7 @@ const Footer = () => {
           <FooterBottomWrapper>
             <FooterCopyRightText>
               Copyrights 2022. All Rights are Reserved by&nbsp;
-              <FooterCopyRightTextSpan>Intelpik</FooterCopyRightTextSpan>
+              <FooterCopyRightTextSpan href="https://intelpik.com/" target="_blank">Intelpik</FooterCopyRightTextSpan>
             </FooterCopyRightText>
           </FooterBottomWrapper>
         </FooterWrapper>

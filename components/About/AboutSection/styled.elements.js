@@ -4,6 +4,9 @@ export const Section = styled.div`
 background-image: url("https://expert-themes.com/newwp/emarat/wp-content/uploads/2020/10/1.jpg");
 background-repeat: no-repeat;
 padding:200px 0;
+display: flex;
+flex-direction: column;
+height: 100%;
 position: relative;
 @media(max-width: 768px){
     padding: 20px 0 100px 0;
@@ -15,6 +18,18 @@ padding: 0px 15px;
 margin: 0 auto;
 display: flex;
 flex-direction: row;
+@media(max-width: 768px){
+    flex-direction:column;
+    align-items:center;
+}
+`
+export const BelowContainer = styled.div`
+max-width: 1200px;
+padding: 0px 15px;
+margin: 0 auto;
+margin-top:200px;
+display: flex;
+flex-direction: column;
 @media(max-width: 768px){
     flex-direction:column;
     align-items:center;
