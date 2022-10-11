@@ -42,7 +42,7 @@ z-index: 1;
 filter:blur(5px);
 `
 export const Image = styled.img`
-width: 180px;
+width: 150px;
 object-fit:contain;
 margin-right:16px;
 height:80px;

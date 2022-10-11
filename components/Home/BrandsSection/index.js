@@ -5,17 +5,29 @@ function index() {
     <Section>
       <Container>
         <Overlay src="/images/corept overlay.jpg"/>
-        <Counter>
+        {/* <Counter>
           <Image src="/images/br1.jpg" alt="image" />
-        </Counter>
+        </Counter> */}
         <Counter>
         <Image src="/images/br2.jpg" alt="image" />
+        </Counter>
+        <Counter>
+        <Image src="/images/br5.jpg" alt="image" />
         </Counter>
         <Counter>
         <Image src="/images/br4.png" alt="image" />
         </Counter>
         <Counter>
-        <Image src="/images/br5.jpg" alt="image" />
+        <Image src="/images/br6.jpg" alt="image" />
+        </Counter>
+        <Counter>
+        <Image src="/images/br10.png" alt="image" />
+        </Counter>
+        <Counter>
+        <Image src="/images/br7.jpg" alt="image" />
+        </Counter>
+        <Counter>
+        <Image src="/images/br9.png" alt="image" />
         </Counter>
         
       </Container>

@@ -4,12 +4,17 @@ function index() {
   return (
     <Section>
       <Container>
+
         <Counter>
           <Number>15+</Number>
-          <Title>years of Experience engineers</Title>
+          <Title>Years of Experience engineers</Title>
         </Counter>
         <Counter>
-          <Number>200+</Number>
+          <Number>100+</Number>
+          <Title>Satisfied Clients</Title>
+        </Counter>
+        <Counter>
+          <Number>300+</Number>
           <Title>Projects Ongoing </Title>
         </Counter>
         {/* <Counter>

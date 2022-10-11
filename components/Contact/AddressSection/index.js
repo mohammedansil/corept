@@ -42,18 +42,18 @@ function index() {
             <Contact>
               <Icon></Icon>
               <Description>
-              Riffa Manama <br />Kingdom of Bahrain
+              Flat -26, building 1164, road 2831<br></br>block 328 Alsuqayyah 
               </Description>
             </Contact>
           </ContactDetails>
-          <SocialMedia>
+          {/* <SocialMedia>
             <Head>Follow on:</Head>
             <Icons></Icons>
             <Icons></Icons>
             <Icons></Icons>
             <Icons></Icons>
             <Icons></Icons>
-          </SocialMedia>
+          </SocialMedia> */}
         </LeftContainer>
         <RightContainer>
           <Map
