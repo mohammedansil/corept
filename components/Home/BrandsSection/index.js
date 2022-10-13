@@ -27,7 +27,7 @@ function index() {
         <Image src="/images/br7.jpg" alt="image" />
         </Counter>
         <Counter>
-        <Image src="/images/br9.png" alt="image" />
+        <Image src="/images/br11.jpg" alt="image" />
         </Counter>
         
       </Container>
