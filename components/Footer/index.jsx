@@ -71,7 +71,7 @@ const Footer = () => {
               </IconContainer>
               <IconContainer>
                 <IconContainerPhone />
-                <IconContainerText>+973 32302049<br/>+973 37132632</IconContainerText>
+                <IconContainerText>+973 32302049<br/>+973 17341435</IconContainerText>
               </IconContainer>
           
               <IconContainer>
