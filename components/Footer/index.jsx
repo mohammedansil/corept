@@ -46,7 +46,7 @@ const Footer = () => {
                 </FooterLogoDivLink> */}
 
                 <FooterLogoDivLink
-                  href="https://www.instagram.com/core_posttensioned/"
+                   href="https://www.instagram.com/core_posttensioned/"
                   passHref
                 >
                   <FooterLogoDivLinkA>
@@ -71,7 +71,7 @@ const Footer = () => {
               </IconContainer>
               <IconContainer>
                 <IconContainerPhone />
-                <IconContainerText>+973 32302049<br/>+973 17341435</IconContainerText>
+                <IconContainerText>+973 32302049<br/>+973 17341435 </IconContainerText>
               </IconContainer>
           
               <IconContainer>
