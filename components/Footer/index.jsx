@@ -46,7 +46,7 @@ const Footer = () => {
                 </FooterLogoDivLink> */}
 
                 <FooterLogoDivLink
-                  href="https://www.instagram.com/p/Cfw7CuAM5rh/?igshid=MDJmNzVkMjY="
+                  href="https://www.instagram.com/core_posttensioned/"
                   passHref
                 >
                   <FooterLogoDivLinkA>

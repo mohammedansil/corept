@@ -29,7 +29,8 @@ function index() {
           <ContactDetails>
             <Contact>
               <Icon></Icon>
-              <Description>Call us: +973 32302049 / +973 37132632</Description>
+              <Description>Call us: +973 32302049 / +973 17341435</Description>
+              {/* <Description>Call us: +973 32302049 / +973 37132632</Description> */}
             </Contact>
             <Contact>
               <Icon></Icon>
